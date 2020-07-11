@@ -16,4 +16,9 @@ public class ClassesServiceImpl implements ClassesService {
     public Iterable<Classes> findAll() {
         return classesRepository.findAll();
     }
+
+    @Override
+    public void save(Classes classes) {
+        classesRepository.save(classes);
+    }
 }

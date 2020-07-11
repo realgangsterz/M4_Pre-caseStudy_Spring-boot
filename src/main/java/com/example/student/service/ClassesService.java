@@ -7,4 +7,6 @@ import org.springframework.stereotype.Service;
 @Service
 public interface ClassesService {
     Iterable<Classes> findAll();
+
+    void save(Classes classes);
 }
